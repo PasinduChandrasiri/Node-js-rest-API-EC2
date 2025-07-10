@@ -52,15 +52,13 @@ Welcome to the ultimate template for deploying your Node.js REST API on AWS EC2 
 
 ## 🔄 Workflow Explanation
 
-- **CI Process:**  
-On every push to the `main` branch:
+- **CI Process:**  On every push to the `main` branch:
 - Checks out the latest code
 - Sets up Node.js environment
 - Installs dependencies
 - Runs tests (if configured)
 
-- **CD Process:**  
-On successful CI:
+- **CD Process:**  On successful CI:
 - SSH into the EC2 instance
 - Pulls the latest changes
 - Restarts the Node.js application with PM2
