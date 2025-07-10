@@ -28,3 +28,4 @@ jobs:
     - run: |
         touch .env
         echo "${{ secrets.MONGO_DB_URL }}" > .env
+    - run: pm2 restart api
